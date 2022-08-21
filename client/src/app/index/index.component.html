@@ -1,0 +1,49 @@
+<div class="svg" role="presentation">
+  <div class="logo-container">
+    <img class="logo" src="../../images/grailsplusangular.svg" alt="Grails plus Angular"/>
+  </div>
+</div>
+
+<div id="content" role="main">
+  <section class="container colset-2-its">
+    <button (click)="openForm()" class="btn btn-info">Registrar</button>
+    <div id="controllers" role="navigation">
+      <h2>Estudiantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Matricula</th>
+            <th>Alumno</th>
+            <th>Nivel academico</th>
+            <th>Especialdad</th>
+            <th>Semestre</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let c of students">
+          <td>{{ c.matricula }}</td>
+          <td>{{ c.nombre }}</td>
+          <td>{{ c.nivel_academico }}</td>
+          <td>{{ c.especialidad }}</td>
+          <td>{{ c.semestre }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm"  (click)="onDelete(c.id)">Delete</button>
+            <button class="btn btn-warning btn-sm mx-1"  (click)="onEdit(c.id)">Edit</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</div>
+
+<footer class="footer row" role="contentinfo">
+  <div class="col">
+    <a href="http://guides.grails.org" target="_blank">
+      <img src="../../images/advancedgrails.svg" alt="Grails Guides" class="float-left"/>
+    </a>
+  </div>
+  <div class="col"></div>
+  <div class="col">
+    
+  </div>
+</footer>

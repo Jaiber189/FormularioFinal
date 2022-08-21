@@ -1,0 +1,7 @@
+import students.registration.form.Notification
+
+model {
+	Notification notification
+}
+
+json tmpl.notification(notification)

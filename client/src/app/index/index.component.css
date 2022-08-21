@@ -1,0 +1,48 @@
+.container {
+    min-height: 50vh;
+}
+
+a {
+    color: #db4800;
+}
+
+.logo-container {
+    background: #7c7c7c no-repeat 50% 30%;
+    margin-bottom: 20px;
+    color: white;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img.logo {
+    width: 10%;
+    margin-top: 10px;
+}
+
+img.angular-logo {
+    width: 10%;
+    vertical-align: top;
+}
+
+.plus {
+    font-size:8em;
+}
+
+@media (max-width: 1200px) {
+    .plus {
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 880px) {
+    .plus {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 650px) {
+    .plus {
+        font-size: 3em;
+    }
+}

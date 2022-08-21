@@ -1,0 +1,8 @@
+import students.registration.form.Notification
+
+model {
+	Iterable<Notification> notificationList
+}
+
+json tmpl.notification(notificationList ?: [])
+

@@ -1,0 +1,13 @@
+<div class="modal-content">
+    <div class="modal-body">
+        <p class="text-black">{{ message || ''}}</p>
+    </div>
+    <div class="d-flex justify-content-end">
+        <button *ngIf="showCancel" type="button" class="btn btn-sm m-1 btn-outline-danger" (click)="close()">
+          Cancel
+        </button>
+        <button type="button" class="btn btn-sm m-1 btn-primary" (click)="confirm()">     
+         OK
+        </button>
+    </div>
+</div>
