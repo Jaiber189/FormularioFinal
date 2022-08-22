@@ -1,18 +1,16 @@
-## BYP
+## FORMULARIO PARA REGISTRO DE ESTUDIANTES
 
-(Backend)
+# (Backend)
 
 ### Steps for install
 
--   Set APP_URL in .env (the backend url)
--   Set CLIENT_URL in .env (the frontend url)
--   Run migrations and seeders
+-   Download Grails 5+
+-   Moto to Server Folder an run GRAILS RUN-APP
 
+# Font
 
-### Resources and tips
-
-
-```
-// For add enum
-// \DB::statement("ALTER TABLE `table_name` CHANGE `status` `status` ENUM(implode(getAllStatuses())) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT" . Status::PENDING . ";");
-```
+### Steps for install
+-   Install Angular CLI
+-   Move to client Folder
+-   run npm install
+-   run ng serve
