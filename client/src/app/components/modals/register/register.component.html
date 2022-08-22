@@ -1,6 +1,6 @@
 <div class="modal-content">
-  <div class="modal-header">
-      <h4>{{ title || 'Default title.'}}</h4>
+  <div class="modal-header" *ngIf="title">
+      <h4>{{ title }}</h4>
   </div>
   <div class="modal-body">
     <form class="form-body" [formGroup]="studentForm" (ngSubmit)="onRegisterStudent()">

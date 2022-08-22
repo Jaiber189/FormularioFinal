@@ -13,7 +13,7 @@ import { MatDialog, MatDialogClose, MatDialogRef, MAT_DIALOG_DATA } from '@angul
 })
 export class RegisterComponent implements AlertModel {
   
-  title: string = '';
+  title: string = null;
   message: string = '';
   mode: string = null;
   id: number = null;
