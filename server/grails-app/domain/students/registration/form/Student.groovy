@@ -5,7 +5,7 @@ import grails.rest.*
 class Student {
     String nombre
     String correo
-    Int semestre
+    Integer semestre
     String matricula
     String nivel_academico
     String especialidad
@@ -13,7 +13,7 @@ class Student {
     static constraints = {
         nombre(nullable:false,blank:false)
         correo(nullable:false,blank:false,email:true)
-        semestre(nullable:false,blank:false)
+        semestre(nullable:false,blank:false, min: 1, max: 1)
         matricula(nullable:false,blank:false,unique: true)
         nivel_academico inList: ['Bachillerato', 'Licenciatura', 'Maestria', 'Doctorado']
         especialidad(nullable:true,blank:false)
